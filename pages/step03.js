@@ -3,13 +3,12 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, AsyncStorage, TextInp
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import LottieView from 'lottie-react-native';
-import thumbsup from '../assets/lottieJSON/thumbs-up.json';
 
 
-export default function Step01({navigation}) {
+
+export default function Step03({navigation}) {
 
     
-
 
 
     return (
@@ -20,7 +19,7 @@ export default function Step01({navigation}) {
                 </View>
                 <View style={{flex:3, justifyContent: "center", alignItems: "center"}}>
                 <LottieView
-                    source={require('../assets/lottieJSON/thumbs-up.json')}
+                    source={require('../assets/lottieJSON/shape-dance.json')}
                     autoPlay
                     loop={true}
                     width= '100%'
@@ -28,7 +27,7 @@ export default function Step01({navigation}) {
                 />
                 </View>
                 <View style={{flex:3, justifyContent: "center", alignItems: "center"}}>
-                    <TouchableOpacity style={{backgroundColor: '#fff', width: '70%', height: '30%', borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginTop: '20%'}} onPress={()=> navigation.navigate('Step02')}>
+                    <TouchableOpacity style={{backgroundColor: '#fff', width: '70%', height: '30%', borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginTop: '20%'}} onPress={()=> navigation.navigate('Step04')}>
                         <Text style={{fontSize: 35, color: '#3DC50D', fontWeight: 'bold'}}>Next</Text>
                     </TouchableOpacity>
                 </View>
