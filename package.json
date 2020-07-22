@@ -18,6 +18,7 @@
     "react-dom": "~16.11.0",
     "react-lottie": "^1.2.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
+    "react-native-donkey-kong": "^0.5.4",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-screens": "^2.9.0",
     "react-native-web": "~0.11.7",
