@@ -1,5 +1,5 @@
 import React, { Component, useEffect } from 'react';
-import { StyleSheet, Text, View, Button, TouchableOpacity, AsyncStorage, TextInput, ImageBackground, Image, Dimensions, Platform, StatusBar, LayoutAnimation } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, AsyncStorage, TextInput, ImageBackground, Image, Dimensions, Platform, StatusBar, LayoutAnimation, Alert } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import LottieView from 'lottie-react-native';
@@ -22,7 +22,7 @@ export default function Step03({navigation}) {
   
     const handleBarCodeScanned = ({ type, data }) => {
       setScanned(true);
-      alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+      Alert.alert("스캔 된 데이터 :", `데이터 타입: ${type} 그리고 데이터 내용: ${data} 입니다.`);
       console.log(typeof(data))
     };
   

@@ -15,10 +15,10 @@ export default function Step01({navigation}) {
     return (
         <View style={{flex:1}}>
             
-                <View style={{flex:4, justifyContent: "flex-start", alignItems: "center"}}>
+                <View style={{flex:1, justifyContent: "flex-start", alignItems: "center"}}>
                     <Text>Like Button</Text>
                 </View>
-                <View style={{flex:3, justifyContent: "center", alignItems: "center"}}>
+                <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
                 <LottieView
                     source={require('../assets/lottieJSON/thumbs-up.json')}
                     autoPlay
@@ -27,14 +27,19 @@ export default function Step01({navigation}) {
 
                 />
                 </View>
-                <View style={{flex:3, justifyContent: "center", alignItems: "center"}}>
+                <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
                     <TouchableOpacity style={{backgroundColor: '#fff', width: '70%', height: '30%', borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginTop: '20%'}} onPress={()=> navigation.navigate('Step02')}>
-                        <Text style={{fontSize: 35, color: '#3DC50D', fontWeight: 'bold'}}>돈키콩 게임 실행</Text>
+                        <Text style={{fontSize: 20, color: '#3DC50D', fontWeight: 'bold'}}>돈키콩 게임 실행</Text>
+                    </TouchableOpacity>
+                
+                <View style={{flex:1, justifyContent: "center", alignItems: "center"}}></View>
+                    <TouchableOpacity style={{backgroundColor: '#fff', width: '70%', height: '30%', borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginTop: '20%'}} onPress={()=> navigation.navigate('Step03')}>
+                        <Text style={{fontSize: 20, color: '#3DC50D', fontWeight: 'bold'}}>QR 코드 테스트</Text>
                     </TouchableOpacity>
                 </View>
-                <View style={{flex:3, justifyContent: "center", alignItems: "center"}}>
-                    <TouchableOpacity style={{backgroundColor: '#fff', width: '70%', height: '30%', borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginTop: '20%'}} onPress={()=> navigation.navigate('Step03')}>
-                        <Text style={{fontSize: 35, color: '#3DC50D', fontWeight: 'bold'}}>QR 코드 테스트</Text>
+                <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
+                    <TouchableOpacity style={{backgroundColor: '#fff', width: '70%', height: '30%', borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginTop: '20%'}} onPress={()=> navigation.navigate('Step04')}>
+                        <Text style={{fontSize: 20, color: '#3DC50D', fontWeight: 'bold'}}>게임 움직임</Text>
                     </TouchableOpacity>
                 </View>
 
