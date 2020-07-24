@@ -29,7 +29,12 @@ export default function Step01({navigation}) {
                 </View>
                 <View style={{flex:3, justifyContent: "center", alignItems: "center"}}>
                     <TouchableOpacity style={{backgroundColor: '#fff', width: '70%', height: '30%', borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginTop: '20%'}} onPress={()=> navigation.navigate('Step02')}>
-                        <Text style={{fontSize: 35, color: '#3DC50D', fontWeight: 'bold'}}>Next</Text>
+                        <Text style={{fontSize: 35, color: '#3DC50D', fontWeight: 'bold'}}>돈키콩 게임 실행</Text>
+                    </TouchableOpacity>
+                </View>
+                <View style={{flex:3, justifyContent: "center", alignItems: "center"}}>
+                    <TouchableOpacity style={{backgroundColor: '#fff', width: '70%', height: '30%', borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginTop: '20%'}} onPress={()=> navigation.navigate('Step03')}>
+                        <Text style={{fontSize: 35, color: '#3DC50D', fontWeight: 'bold'}}>QR 코드 테스트</Text>
                     </TouchableOpacity>
                 </View>
 
