@@ -26,18 +26,17 @@ export default function Step04({navigation}) {
         }
         setStateNumber(number+1);
         setChange(!false)
-        console.log(kerik)
     }
 
     const motionChange2 = () => {
         if(number % 3 == 1) {
-            return(<Image source={img1} style={{width: 200, height: 200}}/>)
+            return(<Image source={img1} style={{width: 100, height: 100}}/>)
             kerik = img2            
         } else if(number % 3 == 2) {
-            return(<Image source={img2} style={{width: 200, height: 200}}/>)
+            return(<Image source={img2} style={{width: 100, height: 100}}/>)
             kerik = img3
         } else if(number % 3 == 0) {
-            return(<Image source={img3} style={{width: 200, height: 200}}/>)
+            return(<Image source={img3} style={{width: 100, height: 100}}/>)
             kerik = img1            
         }
         setChange(!false)
@@ -50,17 +49,23 @@ export default function Step04({navigation}) {
                 <View style={{flex:4, justifyContent: "flex-start", alignItems: "center"}}>
                     <Text>Like Button</Text>
                 </View>
-                <View style={{flex:3, justifyContent: "center", alignItems: "center"}}>
+                <View style={{flex:3, alignContent: 'center', justifyContent: "center", alignItems: "center"}}>
 
-                    <TouchableOpacity onPress={()=>{motionChange1();}}>
-                        <Text style={{fontSize:20}}>HIT! 때리세요</Text>
-                        <Image source={kerik} style={{width: 200, height: 200}}/>
-                    </TouchableOpacity>
-
-                    {motionChange2()}
+                
+                        {motionChange2()}
+                        <Text style={{fontSize:25, justifyContent: 'center', alignItems: 'center', marginBottom: 100}}>HIT! 아래 버튼을 빠르게 연타하세요</Text>
+                   
 
 
                 </View>
+
+                
+                <TouchableOpacity onPress={()=>{motionChange1();}} style={{ flex: 1, borderRadius: 60, backgroundColor:'red', justifyContent: 'center', alignItems: 'center'}}>
+
+                        <Text style={{fontSize:50, color: '#fff'}}>HIT</Text>
+
+                </TouchableOpacity>
+                
                 <View style={{flex:3, justifyContent: "center", alignItems: "center"}}>
                     <TouchableOpacity style={{backgroundColor: '#fff', width: '70%', height: '30%', borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginTop: '20%'}} onPress={()=> navigation.navigate('Main')}>
                         <Text style={{fontSize: 35, color: '#3DC50D', fontWeight: 'bold'}}>Next</Text>
