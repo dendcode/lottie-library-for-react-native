@@ -12,6 +12,7 @@ import Step02 from './pages/step02';
 import Step03 from './pages/step03';
 import Step04 from './pages/step04';
 import Step05 from './pages/step05';
+import Step06 from './pages/step06';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,7 @@ export default class App extends Component {
           <Stack.Screen name="Step03" component={Step03}></Stack.Screen>
           <Stack.Screen name="Step04" component={Step04}></Stack.Screen>
           <Stack.Screen name="Step05" component={Step05}></Stack.Screen>
+          <Stack.Screen name="Step06" component={Step06}></Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
     )
