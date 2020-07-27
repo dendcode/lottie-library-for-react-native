@@ -17,15 +17,17 @@ export default function Step04({navigation}) {
     var kerik = img1;
 
     function motionChange1 () {
-        if(kerik == img1) {
-            kerik = img2            
-        } else if(kerik == img2) {
-            kerik = img3
-        } else if(kerik == img3) {
-            kerik = img1            
-        }
-        setStateNumber(number+1);
-        setChange(!false)
+
+            if(kerik == img1) {
+                kerik = img2            
+            } else if(kerik == img2) {
+                kerik = img3
+            } else if(kerik == img3) {
+                kerik = img1            
+            }
+            setStateNumber(number+1);
+            setChange(!false)        
+        
     }
 
     const motionChange2 = () => {

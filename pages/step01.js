@@ -42,6 +42,11 @@ export default function Step01({navigation}) {
                         <Text style={{fontSize: 20, color: '#3DC50D', fontWeight: 'bold'}}>게임 움직임</Text>
                     </TouchableOpacity>
                 </View>
+                <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
+                    <TouchableOpacity style={{backgroundColor: '#fff', width: '70%', height: '30%', borderRadius: 30, justifyContent: 'center', alignItems: 'center', marginTop: '20%'}} onPress={()=> navigation.navigate('Step05')}>
+                        <Text style={{fontSize: 20, color: '#3DC50D', fontWeight: 'bold'}}>생체인식 인증</Text>
+                    </TouchableOpacity>
+                </View>
 
         </View>
     )
